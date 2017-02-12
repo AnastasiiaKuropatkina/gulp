@@ -1,0 +1,46 @@
+.how-it-work {
+    min-height: 580px;
+    position: relative;
+    &:after {
+        background: url(../img/header3.png) center no-repeat;
+        background-position: 0 100%;
+        content: '';
+        height: 572px;
+        margin: auto;
+        margin-left: -527px;
+        position: absolute;
+        left: 25%;
+        bottom: 0;
+        width: 1054px;
+        z-index: -1;
+    }
+    .hiw-list {
+        margin: 2rem 0;
+        padding-left: 2rem;
+    }
+    img {
+        max-width: 75%;
+    }
+    .hiw-list-item {
+        counter-increment: hiw;
+        margin-bottom: 2rem;
+        padding-left: 3rem;
+        position: relative;
+        &:before {
+            content: counter(hiw);
+            font-family: Montserrat;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 50px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        h4 {
+            margin-bottom: 8px;
+        }
+        p {
+            max-width: 300px;
+        }
+    }
+}

@@ -1,0 +1,324 @@
+.second-page {
+    .col-sm-8 {
+        margin: auto;
+    }
+    .about-us {
+        background: #f3f3f3;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        position: relative;
+        z-index: 1;
+        &:before {
+            background: url(../img/team2.png) no-repeat 100% 100%;
+            content: '';
+            height: 520px;
+            margin: auto;
+            margin-right: -380px;
+            pointer-events: none;
+            position: absolute;
+            right: 18%;
+            bottom: 0;
+            transform: scale(.9);
+            transform-origin: 100% 100%;
+            width: 760px;
+            z-index: -1;
+        }
+        .about-us-list {
+            margin: 40px 20px 20px 0;
+            max-width: 360px;
+            &:before {
+                @include svg-users;
+                content: '';
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                vertical-align: middle;
+            }
+            span {
+                @extend h3;
+                color: $brand-color;
+                display: inline-block;
+                margin-bottom: 20px;
+                vertical-align: middle;
+            }
+        }
+        ul {
+            padding-bottom: .5rem;
+        }
+        li {
+            line-height: 2rem;
+            width: 33%;
+            &:before {
+                background: #1b1d1f;
+                border-radius: 50%;
+                content: '';
+                display: inline-block;
+                height: 6px;
+                margin-right: 1rem;
+                width: 6px;
+            }
+        }
+    }
+    .why {
+        position: relative;
+        z-index: 1;
+        &:before {
+            background: url(../img/team3.png) no-repeat 0 100%;
+            content: '';
+            height: 881px;
+            margin-left: -640px;
+            position: absolute;
+            bottom: 0;
+            left: 35%;
+            pointer-events: none;
+            transform: scale(.9);
+            transform-origin: 0 100%;
+            width: 1280px;
+            z-index: -1;
+        }
+    }
+    .description {
+        margin-top: 2rem;
+    }
+    .contact-us {
+        h4 {
+            margin-bottom: 2rem;
+            font-family: Montserrat;
+        }
+        .adress, .tel, .mail {
+            @extend h5;
+            display: block;
+            margin-bottom: 2rem;
+            font-family: Lato;
+            &:hover {
+                color: $brand-color;
+            }
+            &:before {
+                content: '';
+                color: #cccccc;
+                display: block;
+                font-family: Lato;
+                font-size: .85em;
+                font-weight: bold;
+                line-height: 1;
+                padding-bottom: .5rem;
+                text-transform: uppercase;
+            }
+        }
+        .adress:before {
+            content: 'Adress';
+        }
+        .tel:before {
+            content: 'Telephone';
+        }
+        .mail:before {
+            content: 'email';
+        }
+        form {
+            max-width: 36rem;
+            width: 100%;
+        }
+    }
+    .pricing {
+        .text-column {
+            padding: 0 20px;
+        }
+        .table {
+            margin-bottom: 2rem;
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            box-shadow: 0 3px 3px 0 rgba(0,0,0,.05);
+            position: relative;
+            &:before {
+                border-radius: 5px;
+                box-shadow: 0 3px 5px 0 rgba(0,0,0,.25);
+                content: '';
+                height: 100%;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: calc(100% - 10px);
+                z-index: -1;
+            }
+        }
+        .table-head, .table-row {
+            padding-left: 20px;
+        }
+        .table-row {
+            font-size: 1rem;
+            height: 60px;
+            &:nth-child(odd) {
+                background-color: #fcfcfc;
+            }
+            &:hover {
+                background: darken(#f3f3f3,15%);
+            }
+            &.letters {
+                svg {
+                    width: 40px;
+                }
+            }
+        }
+        .table-head {
+            background: $brand-color;
+            border-radius: 5px 5px 0 0;
+            color: $white;
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: bold;
+            height: 60px;
+            svg {
+                path, rect, polygon, circle {
+                    fill: $white;
+                }
+            }
+        }
+        svg {
+            height: 40px;
+            path, rect, polygon, circle {
+                fill: $brand-color;
+            }
+        }
+
+        .dialog {
+            .message-container {
+                min-width: 280px;
+            }
+            .message {
+                position: relative;
+                text-align: left;
+                h4 {
+                    margin-bottom: 1rem;
+                }
+                .info {
+                    max-height: 220px;
+                    overflow-y: scroll;
+                    box-shadow: 0 3px 3px 0 rgba(0,0,0,.05);
+                    border-radius: 2px;
+                    border: 1px solid #eaeaea;
+                }
+                .row {
+                    padding: 0;
+                }
+                .col-xs-8 {
+                    font-weight: 600;
+                    padding-left: 1rem;
+                }
+            }
+        }
+        .pricing-more-info {
+            vertical-align: baseline;
+            color: #1080d0;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+    .first {
+        background: #f3f3f3;
+    }
+    &.info-page {
+        h3 {
+            margin: 2rem 0 1rem;
+        }
+        h4 {
+            margin: 1rem 0 .5rem;
+        }
+        .col {
+            padding-right: 80px;
+        }
+        a {
+            vertical-align: baseline;
+            color: $brand-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &.privacy-policy {
+        ul {
+            padding-bottom: 1rem;
+            li {
+                display: block;
+                posithion: relative;
+                &:before {
+                    background: #1b1d1f;
+                    border-radius: 50%;
+                    content: '';
+                    display: inline-block;
+                    height: 6px;
+                    margin-right: 1rem;
+                    width: 6px;
+                }
+            }
+        }
+    }
+    &.terms-conditions {
+        ol {
+            padding-bottom: .5rem;
+            li {
+                display: block;
+                padding-left: 1.5rem;
+                padding-bottom: .5rem;
+            }
+        }
+    }
+    &.testi-page {
+        .testi-content {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            box-shadow: 0 3px 3px 0 rgba(0,0,0,.05);
+            margin-bottom: 2rem;
+            padding: 2rem 1rem;
+            &:after {
+                border-radius: 5px;
+                box-shadow: 0 3px 5px 0 rgba(0,0,0,.25);
+                content: '';
+                height: 100%;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: calc(100% - 10px);
+                z-index: -1;
+            }
+            .testi-author {
+                position: relative;
+                z-index: 10;
+                h4, h5 {
+                    margin-bottom: .25rem;
+                    font-family: 'Montserrat';
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                span {
+                    color: #cccccc;
+                    display: block;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: .25rem;
+                }
+            }
+            .testi-text {
+                font-style: italic;
+            }
+        }
+    }
+    &.page404 {
+        h3 {
+            margin-bottom: 2rem;
+        }
+    }
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+}

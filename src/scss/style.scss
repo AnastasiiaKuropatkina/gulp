@@ -1,0 +1,27 @@
+@import "vendor/sprite";
+
+// base styles
+@import "main/mixins";
+@import "main/base";
+@import "main/head";
+@import "main/footer";
+
+// modules
+@import "modules/categories";
+@import "modules/sample";
+@import "modules/free-inquiry";
+@import "modules/how-it-work";
+@import "modules/benefits";
+@import "modules/testimonials";
+
+// pages
+@import "pages/second-page";
+// @import "pages/single-essaybattle";
+
+// vendor
+@import "vendor/animsition/animsition";
+@import "vendor/flexboxgrid";
+@import "vendor/slick";
+
+// Media 
+@import "main/media-query";

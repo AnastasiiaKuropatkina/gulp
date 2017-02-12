@@ -1,0 +1,13 @@
+
+	@mixin svg-sprite {
+		background: url('../img/sprite.svg') no-repeat;
+		background-size: {{spriteWidth}}px {{spriteHeight}}px;
+	}
+{{#shapes}}
+    @mixin svg-{{base}} {
+	    @include svg-sprite;
+	    background-position: {{position.absolute.x}}px {{position.absolute.y}}px;
+	    height: {{height.inner}}px;
+	    width: {{width.inner}}px;
+	}
+{{/shapes}}

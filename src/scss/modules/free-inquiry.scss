@@ -1,0 +1,18 @@
+.free-inquiry {
+    background: $brand-color;
+    .call-text {
+        padding-right: 2rem;
+        text-align: right;
+        h3 {
+            color: $white;
+            font-family: 'Montserrat';
+        }
+    }
+    .button {
+        border-color: $white;
+        &:hover {
+            color: $brand-color;
+            background-color: $white;
+        }
+    }
+}

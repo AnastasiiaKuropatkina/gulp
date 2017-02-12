@@ -1,0 +1,271 @@
+
+@media only screen and (max-width: 1300px) {
+    .row, .slick-dots {
+        max-width: calc(100% - 2rem);
+    }
+    .row.z, .z.slick-dots {
+        max-width: 100%;
+    }
+    .head .head-content .right.col-mobile-12 {
+        text-align: center;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    h1, .head .head-content .title {
+        font-size: 3rem;
+    }
+    .head .head-content .subtitle {
+        font-size: 1.2rem;
+    }
+    .free-inquiry .center-mobile {
+        align-items: center;
+    }
+}
+//small
+@media only screen and (max-width: 1199px) {
+    .head {
+        .head-content {
+            img {
+                max-width: 270px;
+            }
+            .one {
+                margin: 70px -40px -110px 0;
+            }
+            .two {
+                margin: 0 0 -100px;
+            }
+            .subtitle {
+                margin-bottom: 2rem;
+            }
+            .title {
+                line-height: 1.25;
+                margin-top: 0;
+            }
+        }
+    }
+    .second-page {
+        .pricing {
+            .table-row {
+                font-size: 15px;
+                height: 60px;
+            }
+        }
+    }
+    .head .head-info {
+        height: auto;
+        padding: 1rem 0;
+    }
+    .how-it-work:after {
+        left: 20%;
+    }
+}
+
+//xsmall 
+@media only screen and (max-width: 1024px) {
+    .head .head-content .one, .how-it-work:after, .about-us .team-image {
+        display: none;
+    }
+    .how-it-work {
+        min-height: auto;
+        .block-title {
+            text-align: center;
+        }
+    }
+    .head .head-content img {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    .head .head-info .contacts, .head .head-info .logo-container {
+        text-align: center;
+    }
+    .how-it-work .row .col-mobile-12 {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    }
+    .how-it-work .hiw-list {
+        padding-left: 0rem;
+    }
+    .how-it-work .hiw-list-item {
+        min-height: 3.5rem;
+    }
+    .sect {
+        padding: 2rem 0;
+    }
+    .footer .paypal, .footer .skrill {
+        transform: scale(.7);
+        transform-origin: 0 0;
+    }
+    .second-page.testi-page .testi-content:last-child {
+        margin-bottom: 0;
+    }
+    .second-page .why:before, .second-page .about-us:before {
+        display: none;
+    }
+}
+
+//medium
+@media only screen and (min-width: 1200px) and (max-width: 1640px) {
+}
+
+
+//S.large
+@media only screen and (min-width: 1640px) {
+}
+
+//mobile 
+@media only screen and (max-width: 720px) {
+    h1, h2, h3, .how-it-work .hiw-list-item:before {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    .sect {
+        padding: 1rem 0;
+    }
+    .sect.categories {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .categories .item {
+        margin: 0 20px 20px;
+    }
+    .free-inquiry .call-text {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 0;
+        text-align: center;
+    }
+    .head {
+        background: url(../img/header.jpg) 50% 100% no-repeat;
+    }
+    .head .head-info .contacts a {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    .head .head-menu .row {
+        height: auto;
+    }
+    .head .head-menu {
+        position: relative;
+        .row {
+            padding: 0;
+        }
+    }
+    .head .menu-list {
+        max-height: 0;
+        margin: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .head .head-menu li, .head .head-menu li a {
+        display: block;
+    }
+    .mobile-button {
+        display: block;
+        span {
+            background: $brand-color;
+        }
+        &.open {
+            span {
+                background: $white;
+            }
+        }
+    }
+    .popup-info .left {
+        margin-bottom: 20px;
+    }
+    .how-it-work {
+        .hiw-list-item {
+            padding-left: 0;
+            margin-bottom: 0;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .benefits .description, .categories .description {
+        display: none;
+    }
+    .block-title.center, .how-it-work .block-title {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    .second-page {
+        .description {
+            margin-top: 1rem;
+        }
+        .pricing {
+            .text-info {
+                padding: 0 20px;
+            }
+            .table-row {
+                background: $white;
+                height: auto;
+                margin-bottom: 20px;
+                padding: 0;
+                &:hover {
+                    background: transparent;
+                }
+                &:nth-child(odd) {
+                    background: transparent;
+                }
+                div {
+                    line-height: 40px;
+                    &:first-child, &:nth-child(2) {
+                        background: $brand-color;
+                        color: $white;
+                        font-weight: bold;
+                    }
+                    &:nth-child(1n) {
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .sect {
+        padding: 40px 0;
+    }
+    .benefits .row, .categories .row {
+        padding: 0;
+    }
+    .categories .item {
+        padding: 20px 30px;
+    }
+    .categories svg {
+        height: 60px;
+        transform: scale(.8);
+    }
+    .categories .title {
+        margin: 10px 0 15px;
+    }
+    .second-page.testi-page .testi-content .testi-author .user-img {
+        height: 100px;
+        line-height: 130px;
+        width: 100px;
+    }
+    .sample .sample-popup .popup-info .one {
+        padding: 30px 20px 20px;
+    }
+    .sample .sample-popup .popup-info .two {
+        padding: 30px 20px 0;
+    }
+    .sample .sample-popup .popup-close {
+        position: absolute;
+        top: -60px;
+        right: 20px;
+    }
+    .sample .sample-popup {
+        position: absolute;
+    }
+}

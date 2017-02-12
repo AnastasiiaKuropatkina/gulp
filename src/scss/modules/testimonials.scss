@@ -1,0 +1,40 @@
+.testimonials {
+    background: #f1f2f2;
+    .block-title {
+        margin-bottom: 40px;
+    }
+    .slick-list {
+        padding-top: 60px;
+    }
+    .testi-content {
+        background: $white;
+        padding: 0 80px 40px;
+        text-align: center;
+        .testi-author {
+            margin-top: -60px;
+            .user-img {
+                background: $brand-color;
+                border-radius: 50%;
+                display: inline-block;
+                height: 120px;
+                line-height: 150px;
+                margin-bottom: 10px;
+                width: 120px;
+            }
+            h4 {
+                margin-bottom: 4px;
+            }
+        }
+        .testi-text {
+            background: $white;
+            font-family: Lato;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: normal;
+            line-height: 32px;
+            margin-top: -130px;
+            margin-bottom: 60px;
+            padding: 140px 80px 60px;
+        }
+    }
+}

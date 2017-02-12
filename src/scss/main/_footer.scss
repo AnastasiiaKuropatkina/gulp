@@ -1,0 +1,67 @@
+.footer {
+    background: $black;
+    color: #c7c7c7;
+    .logo .logo-bg {
+        fill: #c7c7c7;
+    }
+    .logo {
+        display: block;
+        margin: .66rem 0 1rem;
+    }
+    .data {
+        font-size: 1rem;
+    }
+    ul {
+        li {
+            display: block;
+            margin-bottom: 1rem;
+            a {
+                display: inline-block;
+                position: relative;
+                padding-bottom: .25rem;
+                &:after {
+                    background-color: transparent;
+                    content: '';
+                    height: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 0;
+                    -webkit-transition: all .5s ease;
+                            transition: all .5s ease;
+                }
+                &:hover {
+                    color: $brand-color;
+                }
+                &:hover:after {
+                    background-color: $brand-color;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .paypal, .skrill {
+        background-repeat: no-repeat;
+        text-indent: -100em;
+        font-size: 0;
+        color: transparent;
+        &:hover {
+            opacity: .75;
+            color: transparent;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    .paypal {
+        background-image: url('/img/ppcom.svg');
+        height: 36px;
+        width: 136px;
+    }
+    .skrill {
+        background-image: url('/img/skrillcom.svg');
+        height: 36px;
+        width: 110px;
+    }
+}

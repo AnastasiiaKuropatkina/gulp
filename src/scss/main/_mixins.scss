@@ -1,0 +1,17 @@
+@mixin brand-font {
+	color: $black;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.75;
+	-webkit-text-size-adjust: 100%;
+}
+@mixin brand-font-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+$brand-color: #1080d0;
+$light-color: #fcfcfc;
+$action: #1080d0;
+$black: #1B1D1F;
+$white: #fff;

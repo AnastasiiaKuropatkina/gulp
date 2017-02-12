@@ -1,0 +1,18 @@
+html
+  head
+    link(rel='stylesheet', href='../css/cube.css')
+    title= title
+  body
+    - var n = 0;
+    ul
+      while n < 3
+        li
+          .sub-none= n++
+          - var i = 0
+          ul
+            while i < 3
+              li.content-box
+                .sub #{n}. #{i}
+                - i++
+                  .box
+                    .content

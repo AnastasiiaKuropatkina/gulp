@@ -1,0 +1,49 @@
+.categories {
+    .item {
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid rgba(234,234,234,1);
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,.05);
+        display: block;
+        font-size: 1rem;
+        margin: 0 0 2rem 2rem;
+        padding: 2rem 1rem;
+        position: relative;
+        text-align: center;
+        min-height: 18rem;
+        &:before {
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 0 rgba(0,0,0,.25);
+            content: '';
+            height: 100%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: calc(100% - 10px);
+            z-index: -1;
+        }
+        &:hover {
+            background: $light-color;
+        }
+        svg {
+            height: 80px;
+            path, rect, polygon, circle {
+                fill: $brand-color;
+            }
+        }
+    }
+    .title {
+        @extend h4;
+        font-family: 'Montserrat';
+        margin: 1rem 0 1rem;
+    }
+    .description {
+        font-size: 1rem;
+        margin: 0 0 4rem;
+        text-align: center;
+        width: 100%;
+    }
+}

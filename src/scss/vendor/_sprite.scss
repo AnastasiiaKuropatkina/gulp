@@ -1,0 +1,227 @@
+
+	@mixin svg-sprite {
+		background: url('../img/sprite.svg') no-repeat;
+		background-size: 1869px 1728px;
+	}
+    @mixin svg-arrow-green-continue {
+	    @include svg-sprite;
+	    background-position: 0px 0px;
+	    height: 11px;
+	    width: 7px;
+	}
+    @mixin svg-arrow-orange-continue {
+	    @include svg-sprite;
+	    background-position: -7px -11px;
+	    height: 11px;
+	    width: 7px;
+	}
+    @mixin svg-arrow-white-continue {
+	    @include svg-sprite;
+	    background-position: -14px -22px;
+	    height: 11px;
+	    width: 7px;
+	}
+    @mixin svg-benefit-impression {
+	    @include svg-sprite;
+	    background-position: -21px -33px;
+	    height: 74px;
+	    width: 73px;
+	}
+    @mixin svg-benefit-text {
+	    @include svg-sprite;
+	    background-position: -94px -107px;
+	    height: 68.5px;
+	    width: 53px;
+	}
+    @mixin svg-benefit-time {
+	    @include svg-sprite;
+	    background-position: -147px -176px;
+	    height: 74px;
+	    width: 73px;
+	}
+    @mixin svg-bio {
+	    @include svg-sprite;
+	    background-position: -220px -250px;
+	    height: 69px;
+	    width: 63px;
+	}
+    @mixin svg-comments {
+	    @include svg-sprite;
+	    background-position: -283px -319px;
+	    height: 20px;
+	    width: 21px;
+	}
+    @mixin svg-essay-battle-logo {
+	    @include svg-sprite;
+	    background-position: -304px -339px;
+	    height: 50px;
+	    width: 50px;
+	}
+    @mixin svg-facebook {
+	    @include svg-sprite;
+	    background-position: -354px -389px;
+	    height: 25px;
+	    width: 13.516px;
+	}
+    @mixin svg-google {
+	    @include svg-sprite;
+	    background-position: -368px -414px;
+	    height: 24px;
+	    width: 21.388px;
+	}
+    @mixin svg-letters {
+	    @include svg-sprite;
+	    background-position: -390px -438px;
+	    height: 52px;
+	    width: 70px;
+	}
+    @mixin svg-mail {
+	    @include svg-sprite;
+	    background-position: -460px -490px;
+	    height: 13px;
+	    width: 18px;
+	}
+    @mixin svg-mail-black {
+	    @include svg-sprite;
+	    background-position: -478px -503px;
+	    height: 13px;
+	    width: 18px;
+	}
+    @mixin svg-marketing {
+	    @include svg-sprite;
+	    background-position: -496px -516px;
+	    height: 66px;
+	    width: 70px;
+	}
+    @mixin svg-plan {
+	    @include svg-sprite;
+	    background-position: -566px -582px;
+	    height: 69px;
+	    width: 75px;
+	}
+    @mixin svg-presentation {
+	    @include svg-sprite;
+	    background-position: -641px -651px;
+	    height: 74px;
+	    width: 76px;
+	}
+    @mixin svg-product {
+	    @include svg-sprite;
+	    background-position: -717px -725px;
+	    height: 72px;
+	    width: 70px;
+	}
+    @mixin svg-report {
+	    @include svg-sprite;
+	    background-position: -787px -797px;
+	    height: 73px;
+	    width: 58px;
+	}
+    @mixin svg-resume {
+	    @include svg-sprite;
+	    background-position: -845px -870px;
+	    height: 73px;
+	    width: 58px;
+	}
+    @mixin svg-sample {
+	    @include svg-sprite;
+	    background-position: -903px -943px;
+	    height: 29px;
+	    width: 22px;
+	}
+    @mixin svg-sample-big {
+	    @include svg-sprite;
+	    background-position: -925px -972px;
+	    height: 88px;
+	    width: 67px;
+	}
+    @mixin svg-scroll-to-top {
+	    @include svg-sprite;
+	    background-position: -992px -1060px;
+	    height: 60px;
+	    width: 60px;
+	}
+    @mixin svg-scroll-to-top-color {
+	    @include svg-sprite;
+	    background-position: -1052px -1120px;
+	    height: 60px;
+	    width: 60px;
+	}
+    @mixin svg-slide-arrow {
+	    @include svg-sprite;
+	    background-position: -1112px -1180px;
+	    height: 50px;
+	    width: 51.5px;
+	}
+    @mixin svg-star {
+	    @include svg-sprite;
+	    background-position: -1164px -1230px;
+	    height: 15.94px;
+	    width: 205.214px;
+	}
+    @mixin svg-tel {
+	    @include svg-sprite;
+	    background-position: -1370px -1246px;
+	    height: 13px;
+	    width: 17px;
+	}
+    @mixin svg-tel-black {
+	    @include svg-sprite;
+	    background-position: -1387px -1259px;
+	    height: 13px;
+	    width: 17px;
+	}
+    @mixin svg-testi {
+	    @include svg-sprite;
+	    background-position: -1404px -1272px;
+	    height: 120px;
+	    width: 120px;
+	}
+    @mixin svg-to-top-black {
+	    @include svg-sprite;
+	    background-position: -1524px -1392px;
+	    height: 36px;
+	    width: 36px;
+	}
+    @mixin svg-to-top-color {
+	    @include svg-sprite;
+	    background-position: -1560px -1428px;
+	    height: 36px;
+	    width: 36px;
+	}
+    @mixin svg-twitter {
+	    @include svg-sprite;
+	    background-position: -1596px -1464px;
+	    height: 19.495px;
+	    width: 24px;
+	}
+    @mixin svg-type {
+	    @include svg-sprite;
+	    background-position: -1620px -1484px;
+	    height: 73px;
+	    width: 58px;
+	}
+    @mixin svg-upload-file {
+	    @include svg-sprite;
+	    background-position: -1678px -1557px;
+	    height: 50px;
+	    width: 50px;
+	}
+    @mixin svg-upload-file-color {
+	    @include svg-sprite;
+	    background-position: -1728px -1607px;
+	    height: 50px;
+	    width: 50px;
+	}
+    @mixin svg-users {
+	    @include svg-sprite;
+	    background-position: -1778px -1657px;
+	    height: 47px;
+	    width: 71px;
+	}
+    @mixin svg-youtube {
+	    @include svg-sprite;
+	    background-position: -1849px -1704px;
+	    height: 24px;
+	    width: 20px;
+	}

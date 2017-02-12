@@ -1,0 +1,139 @@
+.benefits {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background: #f3f3f3;
+    .item {
+        background: $brand-color;
+        border-radius: 5px;
+        border: 1px solid $brand-color;
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,.05);
+        color: $white;
+        display: block;
+        font-size: 1rem;
+        margin: 0 1rem 2rem;
+        padding: 2rem 1rem;
+        position: relative;
+        text-align: center;
+        min-height: 20rem;
+        &:before {
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 0 rgba(0,0,0,.25);
+            content: '';
+            height: 100%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: calc(100% - 10px);
+            z-index: -1;
+        }
+        &:hover {
+            background: darken($brand-color,25%);
+            border-color: darken($brand-color,25%);
+            transition: .6s ease;
+            .benefit-impression {
+                animation: benefit-impression 2s infinite linear;
+            }
+            .benefit-time {
+                .big {
+                    animation: benefit-time .6s infinite linear;
+                }
+                .small {
+                    animation: benefit-time 7.2s infinite linear;
+                }
+            }
+            .benefit-text {
+                line:nth-child(1) {
+                    animation: benefit-text 1s infinite ease;
+                }
+                line:nth-child(2) {
+                    animation: benefit-text 1.5s infinite ease;
+                }
+                line:nth-child(3) {
+                    animation: benefit-text 2s infinite ease;
+                }
+                line:nth-child(4) {
+                    animation: benefit-text 2.5s infinite ease;
+                }
+                line:nth-child(5) {
+                    animation: benefit-text 3s infinite ease;
+                }
+                line:nth-child(6) {
+                    animation: benefit-text 3.5s infinite ease;
+                }
+                line:nth-child(7) {
+                    animation: benefit-text 4s infinite ease;
+                }
+                line:nth-child(8) {
+                    animation: benefit-text 4.5s infinite ease;
+                }
+                line:nth-child(9) {
+                    animation: benefit-text 5s infinite ease;
+                }
+            }
+        }
+        .benefit-time {
+            .big {
+                transform-origin: 36px 37px;
+            }
+            .small {
+                transform-origin: 36px 37px;
+            }
+        }
+        .benefit-text {
+            line {
+                stroke-dasharray: 35;
+                stroke-dashoffset: 0;
+            }
+        }
+    }
+    .title {
+        @extend h4;
+        color: $white;
+        font-family: 'Montserrat';
+        margin: 1rem 0 1rem;
+    }
+    .description {
+        font-size: 17px;
+        margin: 10px 0 70px;
+        text-align: center;
+        width: 100%;
+    }
+    svg {
+        height: 80px;
+    }
+}
+
+@keyframes benefit-impression {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes benefit-time {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes benefit-text {
+    0% {
+        stroke-dashoffset: 35;
+    }
+    20% {
+        stroke-dashoffset: 35;
+    }
+    80% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
